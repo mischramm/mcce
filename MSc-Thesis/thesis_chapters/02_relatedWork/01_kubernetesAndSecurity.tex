@@ -1,0 +1,9 @@
+
+
+\chapter{Kubernetes and Security} \label{cha:kubernetesAndSecurity}
+
+Kubernetes has become the de facto standard for container orchestration, enabling the automation of deployment, scaling, and management of containerized applications. However, its widespread adoption has also exposed significant security challenges. Acharekar's (\citeyear{acharekar_exploring_2024}) study provides a comprehensive analysis of vulnerabilities in Kubernetes, ranging from container-level issues to cluster-wide risks. The research emphasizes the importance of addressing these vulnerabilities to ensure the reliability and security of Kubernetes deployments. High-availability techniques, such as redundant control planes and automated failover mechanisms, are highlighted as critical measures to mitigate the impact of security incidents.
+
+One specific area of concern is Kubernetes' susceptibility to distributed denial-of-service (DDoS) attacks. Lee et al. (\citeyear{lee_experimental_2023}) investigate the vulnerability of Kubernetes to YoYo attacks, a type of DDoS attack that exploits the auto-scaling mechanism of cloud environments. Their findings reveal that while Kubernetes demonstrates better resilience than traditional virtual machines, it remains vulnerable to resource exhaustion attacks. The authors propose a machine learning-based detection mechanism using the XGBoost classifier, which significantly improves the accuracy of attack detection.
+
+Another critical aspect of Kubernetes security is the management of configuration files. Rahman et al. (\citeyear{rahman_security_2023}) analyze security misconfigurations in Kubernetes manifests, identifying common issues such as excessive permissions and insecure default settings. Their study underscores the need for automated tools to enforce security best practices and reduce the risk of misconfigurations. For example, the authors developed a tool called SLI-KUBE to detect and address these misconfigurations.
