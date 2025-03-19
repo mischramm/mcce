@@ -20,9 +20,9 @@
     plainpages=false          % avoids duplicate page number problem
 }
 
-% important update for glossaries, before document 
+% important update for glossaries, before document
 %\makeglossaries % see https://www.overleaf.com/learn/latex/glossaries
-%\loadglsentries{C_BackMatter/defns} 
+%\loadglsentries{C_BackMatter/defns}
 
 %\GlsXtrLoadResources[src={C_BackMatter/defns}]
 % adjust indexgroup style:
@@ -48,35 +48,37 @@
 \input{thesis_chapters/00_abstract_de}
 \input{thesis_chapters/00_abstract_en}
 \microtypesetup{protrusion=false}
-\renewcommand{\contentsname}{Inhalt}
+\renewcommand{\contentsname}{Contents}
 \tableofcontents{}
 
 \mainmatter{} % turns on chapter numbering, resets page numbering and uses arabic numerals for page numbers
 
 \input{thesis_chapters/01_introduction/_main}
-\input{thesis_chapters/02_relatedWork}
+\input{thesis_chapters/02_relatedWork/_main}
 \input{thesis_chapters/03_fundamentals/_main}
-\input{thesis_chapters/04_implementation/_main}
-\input{thesis_chapters/05_results}
-\input{thesis_chapters/06_conclusionAndFutureWork}
+\input{thesis_chapters/04_methodology/_main}
+\input{thesis_chapters/05_empiricalWork/_main}
+\input{thesis_chapters/06_interpretationAndDiscussionOfResults/_main}
+\input{thesis_chapters/07_conclusion}
+%\input{thesis_chapters/08_references} % don't need this, as we use biblatex
 
 %\nocite{*} % includes complete bibliography, including entries that remain uncited, RMF
 \printbibliography[title=\literatureLabel] % bibliography
 
 % Use an optional list of tables / figures / algorithms / listings(code).
 
-\renewcommand{\listtablename}{Tabellenverzeichnis}
+\renewcommand{\listtablename}{List of Tables}
 \listoftables
 \clearpage
 
-\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listfigurename}{List of Figures}
 \listoffigures
 \clearpage
 
 %\lstlistoflistings
 %\cleardoublepage{}
 %\listofalgorithms
-%\addcontentsline{toc}{chapter}{List of Algorithms} 
+%\addcontentsline{toc}{chapter}{List of Algorithms}
 %\cleardoublepage{}
 %\cleardoublepage{}
 %\microtypesetup{protrusion=true}

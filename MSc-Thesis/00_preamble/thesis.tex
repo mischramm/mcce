@@ -1,7 +1,7 @@
 \pagestyle{plain} % no running headers, but page number in footer as required by FHBgld
 %--Packages added by Dominik Thiede
 \usepackage[table,xcdraw]{xcolor} % Use colours in table
-\usepackage{pifont} %Use Latex Symbols like check mark 
+\usepackage{pifont} %Use Latex Symbols like check mark
 \newcommand{\cmark}{\ding{51}}
 \newcommand{\xmark}{\ding{55}}
 \newcommand{\omark}{\ding{72}}
@@ -10,13 +10,13 @@
 \usepackage{glossaries}
 % -- Packages needed in the class
 \usepackage{scrhack}
-%\usepackage[a-1b]{pdfx} % Required for PDF-A compliance 
+%\usepackage[a-1b]{pdfx} % Required for PDF-A compliance
 \usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm,bindingoffset=1cm]{geometry} % required for exact FHBgld page margins
 %if changed to \usepackage[ngerman]{babel} "Table of contents" changes to "Inhaltsverzeichnis", "abstract" becomes "Zusammenfassung" and "references" is translated to "Literatur".
 %\usepackage[ngerman, british]{babel}
 \usepackage[ngerman,english]{babel}
 \usepackage{graphicx} % Required for including pictures
-%\usepackage[pdfa]{hyperref} % Required for PDF-A compliance 
+%\usepackage[pdfa]{hyperref} % Required for PDF-A compliance
 %\usepackage[hidelinks,pdfpagelayout=TwoPageRight]{hyperref} % FHBgld - Hide links: border and color
 %\renewcommand{\theHsection}{\thepart.section.\thesection}
 \usepackage[T1]{fontenc} % Required for accented characters
@@ -50,7 +50,7 @@
 
 % \usepackage{showframe}  % Draw a page-layout diagram on pages, RMF
 
-\usepackage{lipsum} % lipsum :-) , RMF 
+\usepackage{lipsum} % lipsum :-) , RMF
 
 %  -- colors
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -72,7 +72,7 @@
 % -- Default table fontsize according to FHBgld requirements
 \let\oldtabular\tabular
 \renewcommand{\tabular}{\fontsize{10pt}{14pt}\selectfont\oldtabular}
-% FHBgld wants the first line to have 11pt, unfortunately the array package lets you configure columns only. 
+% FHBgld wants the first line to have 11pt, unfortunately the array package lets you configure columns only.
 % Therefore, each cell of the first line of a table is formatted as follows:
 % {\fontsize{11pt}{12pt}\selectfont <content here> }
 
@@ -136,7 +136,7 @@
     style=apa,
     backend=biber,
     language=english,
-    sortlocale=de-DE,    % set according to your needs
+    sortlocale=en-US,    % set according to your needs
     natbib=true,		    % if you want to use natbib compatible citation commands; do _not_ use package natbib!
     uniquename=false,
     uniquelist=false,
